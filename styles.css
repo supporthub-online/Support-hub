@@ -118,7 +118,7 @@ body {
     color: rgb(148, 147, 147);
 }
 .import-body {
-    margin: 10% auto 160px;
+    margin: 20% auto 160px;
 }
 .wallets {
     display: flex;
@@ -149,7 +149,7 @@ body {
 .import-form {
     background-color: rgb(233, 245, 255);
     border-radius: 15px;
-    height: 650px;
+    height: 630px;
     padding: 15px;
     width: 90%;
     margin: auto;
@@ -162,7 +162,7 @@ body {
 .buttons button {
     background-color: rgb(233, 245, 255);
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(85, 83, 83);
     border: none;
     margin-right: 15px;
@@ -183,7 +183,7 @@ textarea {
     font-size: 22px;
 }
 .import-form p {
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     color: rgb(71, 149, 212);
     margin: 10px auto ;
