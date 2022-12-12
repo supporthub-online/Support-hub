@@ -20,7 +20,7 @@ body {
 }
 .nav p {
     color: rgb(71, 149, 212);
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 400;
 }
 .container a {
@@ -149,7 +149,7 @@ body {
 .import-form {
     background-color: rgb(233, 245, 255);
     border-radius: 15px;
-    height: 630px;
+    height: 600px;
     padding: 15px;
     width: 90%;
     margin: auto;
